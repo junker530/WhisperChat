@@ -8,6 +8,6 @@ Sendbutton => SendChat => OpenAIAPIKey
 
 2.Voicevoxの起動
 
-voicevox(https://voicevox.hiroshiba.jp/)をダウンロード => 起動
+voicevox( https://voicevox.hiroshiba.jp/ )をダウンロード => 起動
 
 http://localhost:50021/ にVoicevox APIが立ち上がります。
