@@ -1,6 +1,6 @@
 1. OpenAI Api keyの登録
 SendButton => WhisperSpeechToText => OpenAIAPIKey
-<br/>
+
 Sendbutton => SendChat => OpenAIAPIKey
 にOpenAIのAPI Keyを入れてください。
 
