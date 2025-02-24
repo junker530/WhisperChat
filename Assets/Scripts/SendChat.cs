@@ -16,17 +16,10 @@ public class SendChat : MonoBehaviour
     private InputField inputField;
     // APIの返答を受け取るためのInputField
     [SerializeField]
-    private TMP_InputField outputField;
+    private InputField outputField;
     // Text2Speech用Voicevox
     [SerializeField]
     private VOICEVOX voicevox;
-    // チャットメッセージを表示するコンテンツエリア
-    // [SerializeField]
-    // private GameObject content_obj;
-    // チャットメッセージのプレハブオブジェクト
-    // [SerializeField]
-    // private GameObject chat_obj;
-
     // 送信ボタンが押されたときに呼び出されるメソッド
     public void OnClick()
     {
@@ -43,15 +36,6 @@ public class SendChat : MonoBehaviour
     {
         // OpenAI GPTとの接続を初期化
         var chatGPTConnection = new ChatGPTConnection(openAIApiKey);
-	
-        // ユーザーのメッセージを表示するオブジェクトを生成
-        // var sendObj = Instantiate(chat_obj, this.transform.position, Quaternion.identity);
-        // sendObj.GetComponent<Image>().color = new Color(0.6f, 1.0f, 0.1f, 0.3f);
-        // GameObject Child = sendObj.transform.GetChild(0).gameObject;
-        // Child.GetComponent<Text>().text = text;
-        // 生成したオブジェクトをコンテンツエリアの子要素として追加
-        // sendObj.transform.SetParent(content_obj.transform, false);
-
         // OpenAI GPTにリクエストを送信し、応答を待つ
         var response = await chatGPTConnection.RequestAsync(text);
         // 応答があれば処理を行う
@@ -59,16 +43,9 @@ public class SendChat : MonoBehaviour
         {
             var choice = response.choices[0];
             Debug.Log("ChatGPT Response: " + choice.message.content);
-            // GPTの応答を表示するオブジェクトを生成
-            // var responseObj = Instantiate(chat_obj, this.transform.position, Quaternion.identity);
-            // responseObj.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
-            // GameObject Child_responce = responseObj.transform.GetChild(0).gameObject;
-            // Child_responce.GetComponent<Text>().text = choice.message.content;
             // 返答内容をテキストフィールドに出力
             outputField.text = choice.message.content;
             PlayVoice(outputField.text);
-            // 応答オブジェクトをコンテンツエリアの子要素として追加
-            // responseObj.transform.SetParent(content_obj.transform, false);
         }
     }
 

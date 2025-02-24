@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638722032670000000
+      ticks: 638759990370000000
     m_Hash: 1649812518
   m_LockFileStatus:
     m_FilePath: /Users/shotasakoda/Project/Unity/WhisperChat/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638722032710000000
+      ticks: 638759990370000000
     m_Hash: 28083133
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -119,8 +119,10 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.6.0
+    - 2.7.1
     compatible:
     - 2.6.0
+    - 2.7.1
     recommended: 2.6.0
     deprecated: []
   dependencies: []
@@ -382,8 +384,14 @@ m_ResolvedPackages:
     - 1.11.0
     - 1.11.1
     - 1.11.2
+    - 1.12.0
+    - 1.13.0
+    - 1.13.1
     compatible:
     - 1.11.2
+    - 1.12.0
+    - 1.13.0
+    - 1.13.1
     recommended: 1.11.2
     deprecated: []
   dependencies:
@@ -658,9 +666,11 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
+    - 1.8.8
     compatible:
     - 1.8.7
-    recommended: 1.8.7
+    - 1.8.8
+    recommended: 1.8.8
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -3818,17 +3828,19 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.4.5
+    recommended: 1.4.6
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
