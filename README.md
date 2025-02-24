@@ -11,3 +11,6 @@ Sendbutton => SendChat => OpenAIAPIKey
 voicevox( https://voicevox.hiroshiba.jp/ )をダウンロード => 起動
 
 http://localhost:50021/ にVoicevox APIが立ち上がります。
+
+
+環境：Unity6
